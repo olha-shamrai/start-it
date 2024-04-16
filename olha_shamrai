@@ -24,3 +24,8 @@ where employee_id = 8
 select last_name, first_name, birth_date, hire_date  
 from employees e
 
+
+-- Show all info about CompanyName and ContactPerson from the Suppliers table.
+
+select company_name, contact_name  
+from suppliers s 

@@ -1,0 +1,19 @@
+-- Show the list of products with the price between 10 and 50.
+
+select product_name 
+from products p 
+where unit_price between 10 and 50 
+
+
+-- Show the list of first and last names of the employees from London.
+
+select first_name, last_name  
+from employees e 
+where city like 'London'
+
+
+-- Show all info about the employee with ID 8.
+
+select *  
+from employees e 
+where employee_id = 8

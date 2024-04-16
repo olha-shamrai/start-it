@@ -17,3 +17,10 @@ where city like 'London'
 select *  
 from employees e 
 where employee_id = 8
+
+
+-- Show all info about LastName, FirstName, BirthDate and HireDate of Employees.
+
+select last_name, first_name, birth_date, hire_date  
+from employees e
+

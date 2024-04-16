@@ -1,0 +1,43 @@
+--Show all info about CompanyName and Address from the Customers table.--
+SELECT CompanyName, Address 
+FROM Customers;
+
+--Show all info about CompanyName and ContactPerson from the Suppliers table--
+SELECT CompanyName, ContactName, ContactTitle 
+FROM Suppliers
+
+--Show all info about ProductName and UnitPrice from the Products table--
+SELECT ProductName, UnitPrice
+FROM Products p 
+
+--Show all info about LastName, FirstName, BirthDate and HireDate of Employees--
+SELECT LastName , FirstName , BirthDate , HireDate 
+FROM Employees e 
+
+
+--Show all info about the employee with ID 8.--
+SELECT *
+FROM Employees e
+WHERE EmployeeID =8
+
+
+--Show the list of first and last names of the employees from London--
+SELECT FirstName , LastName 
+FROM Employees e 
+WHERE City = 'London'
+
+--Show the list of first, last names and ages of the employees whose age is greater than 55--
+SELECT FirstName , LastName, '2024' - BirthDate  as age 
+FROM Employees e 
+WHERE BirthDate < '1969-01-01'
+
+--Show the list of products with the price between 10 and 50--
+SELECT ProductName , ProductID 
+FROM Products p 
+WHERE UnitPrice BETWEEN 10 AND 50
+
+
+--Show the list of products which names start form ‘N’ and average price is greater than 50--
+SELECT ProductName , ProductID 
+FROM Products p 
+WHERE ProductName LIKE  'N%' AND UnitPrice  > 50 
